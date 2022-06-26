@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="bar.css">
+
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var value = document.getElementsByClassName('bar_fill').style.width;
+      let elm = document.getElementsByClassName("bar_fill");
+
+      elm.innerHTML = value+'%';
+    </script>
+    <div class="container">
+      <div class="bar_fill" id="fill"></div>
+    </div>
+
+  </body>
+</html>
