@@ -1,4 +1,5 @@
-.container{
+#container{
+  margin-top: 2%;
   height: 20px;
   border-radius: 22px;
   background-color: rgba(70,70,70,1);
@@ -6,24 +7,15 @@
 }
 
 
-.container .bar_fill{
+#container .bar_fill{
   height: 100%;
-  width: 70%;
+  width:90%;
   background-color: rgba(255,50,50,1);
   border-radius: 22px;
 
-  
+
   text-align: center;
   font-family: "Courier New";
   font-size: 120%;
   font-weight: bold;
-}
-
-button{
-  margin-top: 20%;
-  width: 200px;
-  height: 80px;
-  font-size: 30px;
-  border-radius: 22px;
-  background-color: red;
 }

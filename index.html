@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="bar.css">
+    <link rel="stylesheet" href="bar.css" />
 
     <title></title>
   </head>
   <body>
-    <script>
-      var value = document.getElementsByClassName('bar_fill').style.width;
-      let elm = document.getElementsByClassName("bar_fill");
-
-      elm.innerHTML = value+'%';
-    </script>
-    <div class="container">
-      <div class="bar_fill" id="fill"></div>
+    <div id="container">
+      <div class="bar_fill" id="fill">xx%</div>
     </div>
-
+    
+    <script>
+      value = document.getElementById("fill");
+      value1 = document.getElementById("container");
+      elm = document.getElementById("fill");
+      elm.innerHTML =
+        Math.ceil((value.offsetWidth * 100)/value1.offsetWidth).toString()+"%";
+    </script>
   </body>
 </html>
